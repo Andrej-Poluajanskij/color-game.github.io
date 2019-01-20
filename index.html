@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container filter">
+        <div class="progres-bar">
+            <div class="run-bar">
+            </div>
+        </div>
+            <p class="level">Level:</p>
+            <p class="score">0</p>
+        
+        <div class="screen">
+
+        </div>
+        <div class="buttons">
+            <button type="button" class="button b1" onclick="sendSpalva('yellow')">Yellow</button>
+            <button type="button" class="button b2" onclick="sendSpalva('green')">Green</button>
+            <button type="button" class="button b3" onclick="sendSpalva('red')">Red</button>
+            <button type="button" class="button b4" onclick="sendSpalva('blue')">Blue</button>
+        </div>
+    </div>
+        <div class="game-start">
+            <h1>Super Colours Game</h1>
+            <h3>Just push START</h3>
+            <button type="button" onclick="startButton()"><p>START</p></button>
+        </div>
+        <div class="game-over">
+            <h1>Game Over</h1>
+            <h3 class="finalScore"></h3>
+            <button type="button" onclick="startNewGame()"><p>Play again</p></button>
+        </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

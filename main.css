@@ -1,0 +1,125 @@
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(rgba(118, 26, 26, 0.768), rgb(233, 152, 2))
+}
+.game-over {
+    visibility: hidden;
+}
+.filter {
+    filter: blur(2.5px)
+}
+.game-start, .game-over{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-image: linear-gradient( yellow, green, red, blue);
+    color: white;
+    top: 29%;
+    left: 30%;
+}
+.game-start h1, .game-over h1{
+    font-size: 40px;
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    color: transparent;
+}
+.game-start h3, .game-over h3{ 
+    font-size: 24px;
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    color: transparent;
+}
+.game-start button, .game-over button{ 
+    margin: 25px 0;
+    width: 60%;
+    border-radius: 25px;
+    /* background-image: linear-gradient( yellow, red); */
+    border: none;
+    background: none;
+    /* transition: 0.3s; */
+}
+.game-start button > p, .game-over button > p{
+    margin: 0;
+    font-size: 44px;
+    font-weight: 501;
+    background: linear-gradient(#eee, #333);
+    background-clip: text;
+    color: transparent;
+}
+.game-start button:hover{
+    cursor: pointer;
+    background-image: linear-gradient( green, blue);
+    /* letter-spacing: 10px; */
+}
+.game-over button:hover{
+    cursor: pointer;
+    background-image: linear-gradient( green, blue);
+}
+.startDivOut{
+    visibility: visible;
+}
+.progres-bar{
+    width: 100%;
+    background-color: rgb(221, 220, 220);
+}
+.run-bar{
+    height: 30px;
+    width: 0%;
+    background-color: aqua;
+    /* transition: 1s; */
+}
+.score{
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    font-size: 45px;
+    color: rgb(177, 177, 177);
+}
+.level {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 35px;
+    color: rgb(177, 177, 177);
+}
+.screen{
+    width: 80%;
+    height: 45%;
+    background-color: white;
+}
+.buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons  .b1{
+    background-color: yellow;
+}
+.buttons .b2{
+    background-color:green;
+}
+.buttons .b3{
+    background-color:red;
+}
+.buttons .b4{
+    background-color: blue;
+}
+.buttons button {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
